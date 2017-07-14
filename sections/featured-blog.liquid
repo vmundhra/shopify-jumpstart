@@ -1,0 +1,61 @@
+<div id="home-blog" class="index-section home-section">
+	<div class="home-blog">
+		<div class="wrapper wrapper--margins">
+		{%- assign blog = blogs[section.settings.blog] -%}
+
+			{% if blogs[section.settings.blog] != blank %}
+
+			  <h2 class="home-section-title">{{ blog.title }}</h2>
+
+			{% paginate blog.articles by 3 %}
+
+			<div class="blog-list">
+
+				{% for article in blog.articles %}
+				  {% include 'blog_item' with blog.comments_enabled? %}
+				{% endfor %}
+
+			</div>
+
+			{% if paginate.next.is_link %}
+			  <p class="text-center"><a class="btn btn--large btn--outline btn--dark" href="{{ blog.url }}">More posts</a></p>
+			{% endif %}
+
+			{% endpaginate %}
+
+			{% else %}
+
+			<!-- onboarding -->
+			<div class="onboarding">
+				<h2 class="home-section-title">{{ 'homepage.onboarding.section_title' | t }}</h2>
+				<p>{{ 'homepage.onboarding.no_content' | t }}</p>
+			</div>
+
+			{% endif %}
+
+		</div>
+	</div>
+</div>
+
+{% schema %}
+	{
+	  "name": "Blog posts",
+	  "settings": [
+	    {
+	      "id": "blog",
+	      "type": "blog",
+	      "label": "Blog"
+	    }
+	  ],
+	  "presets": [
+	    {
+	      "name": "Blog posts",
+	      "category": "Blog",
+	      "settings":
+	        {
+	        "blog": "News"
+	      }
+	    }
+	  ]
+	}
+{% endschema %}

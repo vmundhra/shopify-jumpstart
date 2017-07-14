@@ -1,0 +1,86 @@
+<div id="home-video" class="index-section home-section">
+  <div class="home-video {% if section.settings.home_video_bg_text_color %}{{ section.settings.home_video_bg_text_color }}{% endif %}">
+  {% if section.settings.home-video-bg == blank %}
+    <div class="placeholder-background">
+      {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+      {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {% endif %}
+
+  <div class="wrapper wrapper--margins">
+
+    <div class="content push-up">
+      <div class="display-table">
+        <h2 class="display-table-cell huge-title {% if section.settings.home_video_bg_text_color %}{{ section.settings.home_video_bg_text_color }}{% endif %}">
+         {{ section.settings.home-video-text }}
+        </h2>
+      </div>
+    </div>
+    
+{% comment %}
+     <a href="{% if section.settings.home-video-code.url == blank %}https://www.youtube.com/watch?v=_9VUPq3SxOc{% else %}{{ section.settings.home-video-code.url }}{% endif %}" class="video-overlay video-overlay-{{ section.id }}">
+       <span class="video-button">{% include 'asset_svg' with 'play_arrow' %}</span>
+    </a>
+ {% endcomment %}   
+    
+   </div>
+
+  {% if section.settings.home-video-bg != blank %}
+	<span class="prlx-bg prlx-bg--{{ section.id }} no-js lazyload"
+			style="background-image: url('{{ section.settings.home-video-bg | img_url: '300x300' }}')"
+      data-bgset="{% include 'bgset', image: section.settings.home-video-bg %}"
+      data-sizes="auto"
+      data-parent-fit="cover"></span>
+	<noscript>
+		<span class="prlx-bg prlx-bg--{{ section.id }}" style="background-image: url('{{ section.settings.home-video-bg | img_url: '2048x2048' }}')"></span>
+	</noscript>
+	{% endif %}
+ </div>
+</div>
+
+{% schema %}
+  {
+  	"name": "Video",
+  	"settings": [
+  		{
+  			"type": "image_picker",
+  			"id": "home-video-bg",
+  			"label": "Custom video thumbnail",
+  			"info": "1920 x 840px recommended"
+  		},
+  		{
+  			"type": "select",
+  			"id": "home_video_bg_text_color",
+  			"label": "Text color",
+  			"options": [
+  				{
+  					"value": "is-dark-video",
+  					"label": "Dark"
+  				},
+  				{
+  					"value": "is-light-video",
+  					"label": "Light"
+  				}
+  			]
+  		},
+  		{
+  			"type": "text",
+  			"id": "home-video-text",
+  			"label": "Heading",
+  			"default": "Welcome!"
+  		},
+  		{
+  			"type": "video_url",
+  			"id": "home-video-code",
+  			"label": "YouTube or Vimeo link",
+  			"accept": ["youtube", "vimeo"]
+  		}
+  	],
+  	"presets": [
+    	{
+    		"name": "Video",
+    		"category": "Video"
+    	}
+    ]
+  }
+{% endschema %}

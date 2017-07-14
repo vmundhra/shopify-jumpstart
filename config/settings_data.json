@@ -1,0 +1,412 @@
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_body_bg_alt": "#f9f9f9",
+    "color_primary": "#429c80",
+    "color_secondary": "#141414",
+    "color_borders": "#e9e9e9",
+    "color_text_titles": "#111111",
+    "color_text_general": "#343434",
+    "color_text_alternate": "#7a7a7a",
+    "color_text_buttons": "#ffffff",
+    "color_drawer_background": "#000000",
+    "color_drawer_text": "#ffffff",
+    "color_footer_bg": "#000000",
+    "color_footer_text": "#757575",
+    "typography_headings": "Montserrat,sans-serif",
+    "typography_body": "Raleway,sans-serif",
+    "favicon": "",
+    "social_twitter": "",
+    "social_facebook": "",
+    "social_google": "",
+    "social_youtube": "",
+    "social_vimeo": "",
+    "social_pinterest": "",
+    "social_snapchat": "",
+    "social_tumblr": "",
+    "social_instagram": "",
+    "social_linkedin": "",
+    "social_flickr": "",
+    "social_email": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "",
+          "logo_use_inverted": false,
+          "logo-inverted": "",
+          "logo_max_width": "250",
+          "main_linklist": "main-menu",
+          "menu_style": "classic",
+          "menu_text_color": "is-dark",
+          "menu_product": "the-mattress",
+          "show_announcement": false,
+          "home_page_only": true,
+          "announcement_text": "Announce something here",
+          "announcement_link": "",
+          "announcement_color_bg": "#429c80",
+          "announcement_color_text": "#fff"
+        }
+      },
+      "feature-rows": {
+        "type": "feature-rows",
+        "blocks": {
+          "feature-rows-0": {
+            "type": "text",
+            "settings": {
+              "home-featured-align": "left-img",
+              "image": "",
+              "home-featured-title": "Talk about your brand",
+              "home-featured-content": "<p>Use this text to share information about your brand with your customers. <b>Describe a product, share announcements, or welcome customers to your store.<\/b><\/p>",
+              "home-featured-btn-label": "",
+              "home-featured-btn-url": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-rows-0"
+        ],
+        "settings": {}
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text",
+            "settings": {
+              "home-features-icon": "bell-o",
+              "home-features-title": "Describe a feature",
+              "home-features-content": "<p>This section doesn’t currently include any content. <b>Add content to this section using the sidebar.<\/b><\/p>",
+              "width": "33%"
+            }
+          },
+          "feature-columns-1": {
+            "type": "text",
+            "settings": {
+              "home-features-icon": "bell-o",
+              "home-features-title": "Describe a feature",
+              "home-features-content": "<p>This section doesn’t currently include any content. <b>Add content to this section using the sidebar.<\/b><\/p>",
+              "width": "33%"
+            }
+          },
+          "feature-columns-2": {
+            "type": "text",
+            "settings": {
+              "home-features-icon": "bell-o",
+              "home-features-title": "Describe a feature",
+              "home-features-content": "<p>This section doesn’t currently include any content. <b>Add content to this section using the sidebar.<\/b><\/p>",
+              "width": "33%"
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "Text columns with icons"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "slideshow-0": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "slideshow-1": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "slideshow-2": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "slideshow-0",
+          "slideshow-1",
+          "slideshow-2"
+        ],
+        "settings": {}
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "faq-0": {
+            "type": "text",
+            "settings": {
+              "home-faq-title": "Question and answer",
+              "home-faq-content": "<p>This section doesn’t currently include any content. <b>Add content to this section using the sidebar.<\/b><\/p>"
+            }
+          },
+          "faq-1": {
+            "type": "text",
+            "settings": {
+              "home-faq-title": "Question and answer",
+              "home-faq-content": "<p>This section doesn’t currently include any content. <b>Add content to this section using the sidebar.<\/b><\/p>"
+            }
+          },
+          "faq-2": {
+            "type": "text",
+            "settings": {
+              "home-faq-title": "Question and answer",
+              "home-faq-content": "<p>This section doesn’t currently include any content. <b>Add content to this section using the sidebar.<\/b><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "faq-0",
+          "faq-1",
+          "faq-2"
+        ],
+        "settings": {
+          "title": "FAQ"
+        }
+      },
+      "home-product": {
+        "type": "home-product",
+        "settings": {
+          "featured_product": "the-mattress"
+        }
+      },
+      "featured-blog": {
+        "type": "featured-blog",
+        "settings": {
+          "blog": "news"
+        }
+      },
+      "featured-content": {
+        "type": "featured-content",
+        "blocks": {
+          "featured-content-0": {
+            "type": "text",
+            "settings": {
+              "title": "Talk about your brand",
+              "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "featured-content-0"
+        ],
+        "settings": {
+          "home-page-bg": "",
+          "home-page-background-overlay": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_logo": "",
+          "footer_logo_max_width": "50",
+          "footer_newsletter_enable": false,
+          "footer_linklist": "footer",
+          "footer_payment_enable": false
+        }
+      },
+      "video": {
+        "type": "video",
+        "settings": {
+          "home-video-bg": "shopify:\/\/shop_images\/homepage-hero-desktop.jpg",
+          "home_video_bg_text_color": "is-dark-video",
+          "home-video-text": "Your mattress has arrived!",
+          "home-video-code": ""
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "social_sharing_products": true
+        }
+      }
+    },
+    "content_for_index": [
+      "video",
+      "feature-rows",
+      "feature-columns",
+      "featured-content",
+      "faq",
+      "slideshow",
+      "home-product",
+      "featured-blog"
+    ]
+  },
+  "presets": {
+    "Jumpstart": {
+      "color_body_bg": "#ffffff",
+      "color_body_bg_alt": "#f9f9f9",
+      "color_primary": "#429C80",
+      "color_secondary": "#141414",
+      "color_borders": "#e9e9e9",
+      "color_text_titles": "#111111",
+      "color_text_general": "#343434",
+      "color_text_alternate": "#7a7a7a",
+      "color_text_buttons": "#ffffff",
+      "color_drawer_background": "#000000",
+      "color_drawer_text": "#ffffff",
+      "color_footer_bg": "#000000",
+      "color_footer_text": "#757575",
+      "typography_headings": "Montserrat,sans-serif",
+      "typography_body": "Raleway,sans-serif",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "video": {
+          "type": "video",
+          "settings": {}
+        },
+        "feature-rows": {
+          "type": "feature-rows",
+          "blocks": {
+            "feature-rows-0": {
+              "type": "text",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-rows-0"
+          ],
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {}
+        },
+        "kickstarter": {
+          "type": "kickstarter",
+          "settings": {}
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "slideshow-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1",
+            "slideshow-2"
+          ],
+          "settings": {}
+        },
+        "faq": {
+          "type": "faq",
+          "blocks": {
+            "faq-0": {
+              "type": "text",
+              "settings": {}
+            },
+            "faq-1": {
+              "type": "text",
+              "settings": {}
+            },
+            "faq-2": {
+              "type": "text",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "faq-0",
+            "faq-1",
+            "faq-2"
+          ],
+          "settings": {}
+        },
+        "home-product": {
+          "type": "home-product",
+          "settings": {}
+        },
+        "featured-blog": {
+          "type": "featured-blog",
+          "settings": {
+            "blog": "news"
+          }
+        },
+        "featured-content": {
+          "type": "featured-content",
+          "blocks": {
+            "featured-content-0": {
+              "type": "text",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-content-0"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "video",
+        "feature-rows",
+        "feature-columns",
+        "featured-content",
+        "kickstarter",
+        "faq",
+        "slideshow",
+        "home-product",
+        "featured-blog"
+      ]
+    }
+  }
+}
